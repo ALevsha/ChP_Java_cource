@@ -24,8 +24,10 @@ public class Test2 {
 class Employee implements Comparable<Employee>{
 
     /***
-     * Если не задать критерии сравнения в интерфейсе comparable, компилятор будет ругаться, что не знает, как сравнивать
-     * созданные из классов объекты
+     * Интерфейс Comparable используется для сравнения объектов,
+     * используя естественный порядок
+     *
+     * int compareTo(Element e)
      */
     int id;
     String name;
