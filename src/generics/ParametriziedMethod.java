@@ -21,8 +21,8 @@ public class ParametriziedMethod {
 }
 
 class GenMethod{
-    // static - просто для удобства
-    public static <T> T getSecondElement(ArrayList<T> arrayList){
+    // static - просто для удобства. В методах также для ограничения используется extends T
+    public static <T /*extends Number*/> T getSecondElement(ArrayList<T> arrayList){
         return arrayList.get(1);
     }
 }
