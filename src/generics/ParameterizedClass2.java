@@ -35,6 +35,13 @@ class OtherPair<V>{
     private V value1;
     private V value2;
 
+
+    // если делается параметризированный метод внутри параметрезированного класса, тип параметра <T> ожно не указывать
+    // т.к из параметра класса это уже понятно
+    public /*<V>*/ V abs(V val){
+        return val;
+    }
+
     public OtherPair(V value1, V value2) {
         this.value1 = value1;
         this.value2 = value2;
